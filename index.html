@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript Refactorizados - Simple</title>
+    <link rel="stylesheet" href="estilos\style.css">
+</head>
+
+<body>
+    <script src="java/java.js"></script>
+    <header>
+        <h1>DESAFIO <br> PROGRAMAS EN JAVASCRIPT</h1>
+    </header>
+    <div>
+        <center>
+            <button><a href="#astro">
+                    <h3>ASTRONOMIA</h3>
+                </a></button>
+            <button><a href="#medio">
+                    <h3>MEDIO AMBIENTE</h3>
+                </a></button>
+            <button><a href="#sal">
+                    <h3>SALUD</h3>
+                </a></button>
+        </center>
+    </div>
+
+    <div class="contenedor-principal">
+        <div class="contenedor1">
+            <hr>
+            <a name="astro"></a>
+            <h2>Área de Astronomía 🌌</h2>
+            <hr>
+
+            <div class="seccion">
+                <h3>1. IF - Clasificación de Brillo Estelar (Magnitud)</h3>
+                <a href="#" class="ejecutar-link" onclick="ejercicioAstronomiaIF()">Ejecutar IF (Magnitud)</a>
+                <div id="resultadoAstronomiaIF" class="resultado-caja"></div>
+            </div>
+
+            <div class="seccion">
+                <h3>2. FOR - Registro de Distancias de Planetas y Promedio</h3>
+                <a href="#" class="ejecutar-link" onclick="ejercicioAstronomiaFOR()">Ejecutar FOR (Distancias)</a>
+                <div id="resultadoAstronomiaFOR" class="resultado-caja"></div>
+            </div>
+
+            <div class="seccion">
+                <h3>3. WHILE - Contar Cráteres Lunares Grandes</h3>
+                <a href="#" class="ejecutar-link" onclick="ejercicioAstronomiaWHILE()">Ejecutar WHILE (Cráteres)</a>
+                <div id="resultadoAstronomiaWHILE" class="resultado-caja"></div>
+            </div>
+
+            <div class="seccion">
+                <h3>4. SWITCH - Identificar Cuerpo Celeste</h3>
+                <a href="#" class="ejecutar-link" onclick="ejercicioAstronomiaSWITCH()">Ejecutar SWITCH (Cuerpo)</a>
+                <div id="resultadoAstronomiaSWITCH" class="resultado-caja"></div>
+            </div>
+
+            <div class="seccion">
+                <h3>5. DO WHILE - Registro de Niveles de Luz (Lux)</h3>
+                <a href="#" class="ejecutar-link" onclick="ejercicioAstronomiaDOWHILE()">Ejecutar DO WHILE (Lux)</a>
+                <div id="resultadoAstronomiaDOWHILE" class="resultado-caja"></div>
+            </div>
+        </div>
+        <br>
+        <div class="contenedor2">
+            <hr>
+            <a name="medio"></a>
+            <h2>Área de Medio Ambiente 🌳</h2>
+            <hr>
+
+            <div class="seccion">
+                <h3>1. IF - Clasificación de Calidad del Aire (AQI)</h3>
+                <a href="#" class="ejecutar-link" onclick="ejercicioAmbienteIF()">Ejecutar IF (AQI)</a>
+                <div id="resultadoAmbienteIF" class="resultado-caja"></div>
+            </div>
+
+            <div class="seccion">
+                <h3>2. FOR - Registro de Niveles de Ruido y Promedio</h3>
+                <a href="#" class="ejecutar-link" onclick="ejercicioAmbienteFOR()">Ejecutar FOR (Ruido)</a>
+                <div id="resultadoAmbienteFOR" class="resultado-caja"></div>
+            </div>
+
+            <div class="seccion">
+                <h3>3. WHILE - Contar Focos de Calor</h3>
+                <a href="#" class="ejecutar-link" onclick="ejercicioAmbienteWHILE()">Ejecutar WHILE (Focos)</a>
+                <div id="resultadoAmbienteWHILE" class="resultado-caja"></div>
+            </div>
+
+            <div class="seccion">
+                <h3>4. SWITCH - Clasificación del Tipo de Residuo</h3>
+                <a href="#" class="ejecutar-link" onclick="ejercicioAmbienteSWITCH()">Ejecutar SWITCH (Residuo)</a>
+                <div id="resultadoAmbienteSWITCH" class="resultado-caja"></div>
+            </div>
+
+            <div class="seccion">
+                <h3>5. DO WHILE - Monitoreo de Niveles del Río</h3>
+                <a href="#" class="ejecutar-link" onclick="ejercicioAmbienteDOWHILE()">Ejecutar DO WHILE (Río)</a>
+                <div id="resultadoAmbienteDOWHILE" class="resultado-caja"></div>
+            </div>
+        </div>
+        <br>
+        <div class="contenedor3">
+            <hr>
+            <a name="sal"></a>
+            <h2>Área de Salud ⚕️</h2>
+            <hr>
+
+            <div class="seccion">
+                <h3>1. IF - Clasificación de Presión Arterial</h3>
+                <a href="#" class="ejecutar-link" onclick="ejercicioSaludIF()">Ejecutar IF (Presión)</a>
+                <div id="resultadoSaludIF" class="resultado-caja"></div>
+            </div>
+
+            <div class="seccion">
+                <h3>2. FOR - Registro de Temperatura y Promedio</h3>
+                <a href="#" class="ejecutar-link" onclick="ejercicioSaludFOR()">Ejecutar FOR (Temperatura)</a>
+                <div id="resultadoSaludFOR" class="resultado-caja"></div>
+            </div>
+
+            <div class="seccion">
+                <h3>3. WHILE - Contar Pacientes con Fiebre</h3>
+                <a href="#" class="ejecutar-link" onclick="ejercicioSaludWHILE()">Ejecutar WHILE (Fiebre)</a>
+                <div id="resultadoSaludWHILE" class="resultado-caja"></div>
+            </div>
+
+            <div class="seccion">
+                <h3>4. SWITCH - Clasificación de TRIAGE</h3>
+                <a href="#" class="ejecutar-link" onclick="ejercicioSaludSWITCH()">Ejecutar SWITCH (TRIAGE)</a>
+                <div id="resultadoSaludSWITCH" class="resultado-caja"></div>
+            </div>
+
+            <div class="seccion">
+                <h3>5. DO WHILE - Repetir Mediciones SpO2 y Alerta</h3>
+                <a href="#" class="ejecutar-link" onclick="ejercicioSaludDOWHILE()">Ejecutar DO WHILE (SpO2)</a>
+                <div id="resultadoSaludDOWHILE" class="resultado-caja"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
